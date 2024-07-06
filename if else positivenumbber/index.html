@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+    <input type="text" id="input">
+    <button type="submit" id="button" onclick="positive()">click</button> 
+    <div id="result"></div>
+    </div>
+    <script>
+        function positive(){
+            let first_var= Number(document.getElementById("input").value)
+            let store = null
+            if(first_var>0){
+                store = "The number is  positive"
+            }
+            else{
+                store = "The number is  negative"
+            }
+            let result = document.getElementById("result")
+            result.innerHTML=store
+
+        }
+    </script>
+</body>
+</html>
